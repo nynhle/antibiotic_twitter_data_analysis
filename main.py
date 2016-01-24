@@ -1,8 +1,9 @@
 from tweepy import Stream
 from tweepy import OAuthHandler
 from tweepy import StreamListener
-from credentials import credentials
+from credentials import credentials # Class containing credentials for OAuth on twitter. Secret.
 
+# Getting the credentials to get authenticated.
 consumer_key = credentials().consumer_key
 consumer_secret = credentials().consumer_secret
 access_token = credentials().access_token
