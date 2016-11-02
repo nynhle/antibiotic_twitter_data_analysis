@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<title>Antibiotic Tweet Recorder</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<nav class="nav navbar-default" role="navigation">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">Antibiotic Tweet Recorder</a>
+		<div class="navbar-header">
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/create_dataset">Create Dataset</a></li>
+				<li><a href="/dashboard">Dashboard</a></li>
+				<li><a href="/statistics">Statistics</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<div class="container">
+		<div class="alert alert-success" role="alert"><b>Nice!</b> Recording succesfully started!</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4">
+				<h2>Create New Dataset</h2>
+				<form action="#">
+					<div class="form-group">
+						<label for="keyword_name">Name</label>
+						<input type="text" class="form-control" id="new_keyword_name" placeholder="The name of the dataset..." required />
+					</div>
+					<div class="form-group">
+						<label for="new_keyword">Keyword</label>
+						<input type="text" class="form-control" id="new_keyword" placeholder="Your keyword to filter on..." required />
+					</div>
+					<div class "form-group">
+						<input type="submit" class="btn btn-primary" value="Start Recording" id="new_keyword_submit" />
+					</div>
+				</form> 
+			</div>
+	</div>
+</body>
+</html>
